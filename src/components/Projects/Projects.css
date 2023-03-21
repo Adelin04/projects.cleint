@@ -274,10 +274,10 @@ li {
 
 .days-left {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 0px;
+  width: auto;
   font-size: 10px;
   margin: 0px;
   padding: 0px;

@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 //import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
+import profileIcon from '../Icons/profileIcon.svg'
 
 const collaps_up = <FontAwesomeIcon icon={faChevronUp} />;
 const collaps_down = <FontAwesomeIcon icon={faChevronDown} />;
@@ -92,7 +93,8 @@ const ProjectTemplate = ({
                   src={projectOwnerPhoto}
                   alt={"Owner Photo"}
                 />
-              ) : null}
+              ) : <div><img  className="card-project-owner-img" src={profileIcon} /></div>}
+              <div><img src={profileIcon} /></div>
               <h3 className="card-project-owner-name">{projectOwner}</h3>
             </div>
           </div>
